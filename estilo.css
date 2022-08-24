@@ -1,0 +1,132 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+    font-family:'open sans';
+}
+.contenedor{
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+nav{
+  text-align:right;
+padding: 30px 50px 0 0;
+}
+nav > a{
+    color: #fff;
+    font-weight:300;
+    text-decoration: none;
+    margin-right: 10px;
+   }
+ /* about us */
+ .contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+   }
+  
+   .imagen-about-us{
+    width: 20%;
+   }
+  
+   .sobre-nosotros .contenido-textos{
+    width: 25%;
+   }
+   .contenedor-textos p{
+    padding: opx  opx  30px  15px;
+    font-weight: 300;
+    text-align: justify;
+   }
+
+  
+ /* galeria*/
+
+ .portafolio{
+  background: #f2f2f2;
+ }
+
+ .galeria-port{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ }
+
+ .imagen-port{
+  width: 24%;
+  margin-bottom: 10px;
+  height:200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+ }
+ .imagen-port > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+ }
+
+ .hover-galeria{
+  position:absolute;
+   width: 100%;
+   height:100%;
+   top:0;
+   transform:scale(0); 
+   background: hsla(308, 64%, 20%, 0.548);
+   transition:transform .5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ .hover-galeria img{
+   width: 50px;
+ }
+ .hover-galeria p{
+  color: #fff;
+ }
+
+ .imagen-port:hover .hover-galeria{
+  transform: scale(1);
+ }
+ /*footer*/ 
+ footer{
+  background: #a8a6a6;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+ }
+
+ .contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+border-bottom:  1px solid  #ccc;
+ }
+ .content-foo{
+text-align: center;
+ }
+ .content-foo h3{
+  color: #fff;
+  border-bottom: 3px solid #9e2266e8;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  }
+  .content-foo p{
+    color: rgb(10, 10, 10);
+    }
+    .titulo-final{
+      text-align: center;
+      font-size: 24px;
+      margin: 20px 0 0 0;
+      color: #9e2266e8;
+    }
+  
